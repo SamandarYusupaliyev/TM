@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/barlow-v12-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* Global styles */
+body{
+    font-family: Barlow sans-serif;
+    background-color: rgb(252, 249, 249);
+}
+
+.container{
+    max-width:1440px;
+    margin-left: 0 auto; 
+    margin-right: 0 auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img{
+   padding-left: 165px;
+   padding-top: 64px;
+}
+
+.header__btn{
+    width: 175px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-top: 55px;
+    margin-right: 165px;
+    color: #162542;
+    background-color: #E3EAED;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 16px 10px 16px 10px;
+    
+}
+
+.header__btn:hover{
+  cursor: pointer;
+   background-color: rgb(32, 227, 227);
+   transition-duration: 2s;
+}
+
+/* Hero */
+.hero{
+    display: flex;
+    gap: 145px;
+    position: absolute;
+    margin-top: -80px;
+}
+
+.Group__5{
+    margin-top: 256px;
+    padding-left: 165px;
+}
+
+.hero__title{
+    color: #162542;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 56px; 
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.hero__text{
+    color: #7B8BAD;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.hero__button{
+    display: flex;
+    gap: 40px;
+}
+
+.hero__btn{
+    width: 175px;
+    height: 58px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: #F16718;
+    padding: 16px 10px 16px 10px;
+    border: none;
+}
+
+.hero__btn:hover{
+    cursor: pointer;
+    transition-duration: 3s;
+    background: #782f05;
+}
+
+.hero span{
+    margin-top: 20px;
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.hero__img{
+    margin-top: 196px;
+    display: flex;
+    gap: 30px;
+}
+
+.Group__8{
+    width: 200px;
+    height: 240px;
+    flex-shrink: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    background-color: #E3EAED;
+    position: relative;
+    right: -20px;
+}
+
+/* Gallery */
+.gallery{
+display: flex;
+margin-top: 640px;
+position: absolute;
+}
+
+.Group__7{
+    width: 200px;
+    height: 240px;
+    flex-shrink: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+    background-color: #E3EAED;
+    position: relative;
+    left: -60px;
+    margin-top: 240px;
+
+}
+
+.foto{
+    gap: 30px;
+    display: flex;
+}
+
+
+.user{
+    display: flex;
+    gap: 125px;
+}
+
+.card{
+    margin-top: 70px;
+}
+
+.gallery__title{
+    color: #162542;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.gallery__text{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* News */
+
+.news{
+padding-top: 1300px;
+padding-left: 165px;
+gap: 30px;
+display: flex;
+margin-bottom: 100px;
+}
+
+.Group__9{
+    width: 255px;
+    height: 323px;
+    flex-shrink: 0;
+}
+
+.Group__9 img{
+margin-bottom: 48px;
+}
+
+.Group__9 h2{
+    color: #162542;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.Group__9 p{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.Group__10{
+    width: 255px;
+    height: 323px;
+    flex-shrink: 0;
+}
+
+.Group__10 img{
+margin-bottom: 48px;
+}
+
+.Group__10 h2{
+    color: #162542;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.Group__10 p{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.Group__11{
+    width: 255px;
+    height: 323px;
+    flex-shrink: 0;
+}
+
+.Group__11 img{
+margin-bottom: 48px;
+}
+
+.Group__11 h2{
+    color: #162542;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.Group__11 p{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.Group__12{
+    width: 255px;
+    height: 323px;
+    flex-shrink: 0;
+}
+
+.Group__12 img{
+margin-bottom: 48px;
+}
+
+.Group__12 h2{
+    color: #162542;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.Group__12 p{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+  .footer{
+    margin-left: 165px;
+    margin-right: 165px;
+    text-align: center;
+  }
+   
+  .footer__title{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .footer__title:hover{
+    cursor: pointer;
+    transition-duration: 2s;
+    color: #2665ee;
+  }
+
+   footer span{
+    color: #7B8BAD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+   }
+
